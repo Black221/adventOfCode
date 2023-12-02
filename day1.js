@@ -2,17 +2,8 @@ const DIGIT = {
     1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine'
 }
 
-const getInputFileData = () => {
-
-    let file = document.getElementById('day1').files[0];
-    let reader = new FileReader();
-    let data = [];
-
-    reader.onload = function (e) {
-        data = e.target.result.split('\n');
-        resolveProblem(data);
-    }
-    reader.readAsText(file);
+const getOutputDay1 = () => {
+    getInputFileData(resolveProblemDay1, 'day1-input');
 }
 
 const findDigits = (input, reverse = false) => {
@@ -40,18 +31,15 @@ const getDigit = (line, reverse = false) => {
     return min;
 }
 
-const resolveProblem = (data) => {
+const resolveProblemDay1 = (data) => {
     let sum = 0;
     data.forEach((line) => {
         
         let firstDigit = getDigit(line);
         let lastDigit = getDigit(line, true);
-        console.log(firstDigit, lastDigit);
         
         sum += parseInt(firstDigit.digit +''+ lastDigit.digit);
     });
 
     document.getElementById('day1-output').innerHTML = sum;
 }
-
-resolveProblem(strs);

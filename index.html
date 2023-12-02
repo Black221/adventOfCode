@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advent of code</title>
+    <script src="index.js" defer></script>
     <script src="day1.js" defer></script>
+    <script src="day2.js" defer></script>
 </head>
 <body>
     <div class="main">
         <h1>Advent of code</h1>
         <div>
             <h2>Day 1</h2>
-            <p style="width: 360px; text-align: justify;">
+            <p style="width: 520px; text-align: justify;">
                 The newly-improved calibration document consists of lines of text; each line originally contained a specific calibration value that the Elves now need to recover. On each line, the calibration value can be found by combining the first digit and the last digit (in that order) to form a single two-digit number.
             </p>
-            <input type="file" id="day1">
-            <button onclick="getInputFileData()">Get output</button>
+            <input type="file" id="day1-input">
+            <button onclick="getOutputDay1()">Get output</button>
             <p id="day1-output"></p>
+        </div>
+        <div>
+            <h2>Day 2</h2>
+            <p style="width: 520px; text-align: justify;">
+                You play several games and record the information from each game (your puzzle input). Each game is listed with its ID number (like the 11 in Game 11: ...) followed by a semicolon-separated list of subsets of cubes that were revealed from the bag (like 3 red, 5 green, 4 blue).
+            </p>
+            <input type="file" id="day2-input">
+            <button onclick="getOutputDay2()">Get output</button>
+            <p id="day2-output"></p>
         </div>
     </div>
 </body>
