@@ -84,4 +84,4 @@ let dataTest = [
     "Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"
 ]
 
-resolveProblemDay2(dataTest);
+// resolveProblemDay2(dataTest);
