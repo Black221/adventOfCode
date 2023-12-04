@@ -39,7 +39,8 @@ const resolveProblemDay4 = (data) => {
     res.forEach(item => {
         sum += item.instance;
     });
-    console.log(res, sum);
+    // console.log(res, sum);
+    document.getElementById('day4-output').innerHTML = sum;
 }
 
 const dataTest4 = [
