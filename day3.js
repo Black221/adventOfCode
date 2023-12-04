@@ -174,4 +174,4 @@ const dataTest3 =  [
     ".664.598.."
 ]
 
-resolveProblemDay3(dataTest3);
+// resolveProblemDay3(dataTest3);
